@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body class="overflow-hidden">
+    <!-- Preloader-->
+    <div id="preloader"
+        class="h-screen bg-[#1E71FF] flex flex-col gap-4 justify-center items-center fixed top-0 left-0 w-full z-30 ">
+        <p
+            class="text-white font-poppins text-[30px] sm:text-[50px] not-italic font-semibold leading-[116%] tracking-[-0.52px]">
+            chat<span class="font-light">app</span></p>
+        <div
+            class="loader w-[50px] h-[50px] relative border-[5px] border-solid border-[#555] border-t-[#f9f9f9] rounded-[50%] animate-spin">
+        </div>
+    </div>
+    <!-- back to top -->
+    <button id="top"
+        class="hidden bg-none border-none w-[40px] md:w-[50px] h-[40px] md:h-[50px] bottom-0 right-0 fixed z-[3]"
+        onclick="up()"><img class="w-100" src="/assets/images/backtotop.webp" alt="back to top icon"></button>
+    <!-- header -->
+    <div class="bg-[#1E71FF] lg:h-[1007px]">
+        <header class="flex flex-col container1 mx-auto px-3 h-full">
+            <nav class="h-[100px] flex justify-between items-center">
+                <div>
+                    <p
+                        class="text-white font-poppins text-[26px] not-italic font-semibold leading-[116%] tracking-[-0.52px]">
+                        chat<span class="font-light">app</span></p>
+                </div>
+                <ul
+                    class="flex justify-center flex-col items-center sm:flex-row gap-8 fixed bg-[#1E71FF] sm:bg-inherit top-0 w-full sm:justify-end h-full right-[-100%] z-10 sm:static view transition-all ease-linear duration-300">
+                    <li class="flex items-center" onclick="navbar2()"><a
+                            class="text-white font-roboto text-sm/normal not-italic font-medium relative after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                            href="#product">Proudct</a>
+                    </li>
+                    <li class="flex items-center" onclick="navbar2()"><a
+                            class="text-white font-roboto text-sm/normal not-italic font-medium relative after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                            href="#services">Services</a>
+                    </li>
+                    <li class="flex items-center" onclick="navbar2()"><a
+                            class="text-white font-roboto text-sm/normal not-italic font-medium relative after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                            href="#contact">Contact</a>
+                    </li>
+                    <li class="flex items-center" onclick="navbar2()"><a
+                            class="text-white font-roboto text-sm/normal not-italic font-medium relative after:absolute after:w-0 after:h-[1px] after:bg-white after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                            href="#">Log In</a></li>
+                    <li class=" w-28 h-10 rounded-[210px] bg-[#FFFFFF33] flex justify-center items-center hover:border-white border-[1px] border-transparent border-solid cursor-pointer transition-all duration-300 ease-linear"
+                        onclick="navbar2()"><a
+                            class="text-white font-roboto text-sm/normal not-italic font-medium text-center"
+                            href="#">Try
+                            It Free</a></li>
+                </ul>
+                <div class="w-7 h-5 flex flex-col justify-between sm:hidden z-20" onclick="navbar()">
+                    <span class="w-full h-1 rounded bg-white span1 transition-all ease-linear duration-300"></span>
+                    <span class="w-full h-1 rounded bg-white span2 transition-all ease-linear duration-300"></span>
+                    <span class="w-full h-1 rounded bg-white span3 transition-all ease-linear duration-300"></span>
+                </div>
+            </nav>
+            <!-- hero section -->
+            <div id="product" class="grow flex items-center flex-col-reverse lg:flex-row">
+                <div class="w-full lg:w-[42%] lg:translate-y-[-55px] flex flex-col items-center lg:items-start">
+                    <h1
+                        class="text-center lg:text-start max-w-[499px] text-white font-poppins text-[40px] sm:text-[75px] not-italic font-semibold leading-[128%] tracking-[-1.5px] mb-5">
+                        Have your best chat</h1>
+                    <p
+                        class="text-white font-roboto text-lg sm:text-[21px] not-italic font-normal leading-normal mb-4 sm:mb-[60px]">
+                        Fast,
+                        easy & unlimited team chat.</p>
+                    <div class="w-[320px] px-3 sm:px-0 sm:w-[376px] flex justify-between pb-12 lg:pb-0">
+                        <button
+                            class="w-[130px] sm:w-[172px] h-[50px] rounded-[60px] bg-white text-[#1E71FF] font-roboto text-base not-italic font-medium transition-all duration-300 ease-linear hover:text-white hover:bg-transparent border border-solid border-transparent hover:border-white">Try
+                            it Free</button>
+                        <button
+                            class="w-[130px] sm:w-[168px] h-[50px] rounded-[60px] border border-solid border-white text-white font-roboto text-base not-italic font-medium transition-all duration-300 ease-linear hover:border-transparent hover:text-[#1E71FF] hover:bg-white">Get
+                            a Demo</button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-[58%] flex justify-center lg:justify-end">
+                    <img class="w-full sm:w-[585px] sm:h-[643px]" src="/assets/images/herosection-img.webp"
+                        alt="girls smiling">
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- main -->
+    <main>
+        <!-- section1 -->
+        <div id="services" class="bg-white min-[1200px]:min-h-[1226px] flex items-center">
+            <div
+                class="container1 px-3 mx-auto flex flex-col items-center min-[1200px]:translate-y-[-45px] py-12 sm:pt-12 sm:pb-0 min-[1200px]::pt-0">
+                <h2
+                    class="text-[#2B353E] text-center font-poppins text-[30px] sm:text-[45px]  not-italic font-medium leading-[128%] mb-4 sm:mb-[30px]">
+                    Instant Team Chats</h2>
+                <p
+                    class="max-w-[566px] text-[#2B353EB2] text-center font-roboto text-base sm:text-lg not-italic font-normal leading-[161%] mb-4 sm:mb-[60px]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa.</p>
+                <img class="w-full lg:w-[1061px] lg:h-[663px]" src="/assets/images/section1-img.webp" alt="chatapp">
+            </div>
+        </div>
+        <!-- section2 -->
+        <div class="sm:min-h-[853px] bg-[#1E71FF1A] flex items-center">
+            <div
+                class="container2 min-[1200px]:ml-0 ml-auto mr-auto min-[1200px]:pl-0 pl-3 pr-3 flex min-[1200px]:flex-row flex-col my-12 sm:my-24 min-[1200px]:my-0">
+                <div class="w-full min-[1200px]:w-[58%]">
+                    <img class="w-full md:h-[592px]" src="/assets/images/section2-img.webp" alt="cafe">
+                </div>
+                <div class="w-full min-[1200px]:w-[42%] flex items-center min-[1200px]:justify-end">
+                    <div class="min-[1200px]:ml-[90px]">
+                        <h2
+                            class="max-w-[465px] text-[#2B353E] font-poppins text-[25px] sm:text-[45px] not-italic font-medium leading-[128%] mb-6 md:mb-[30px]">
+                            Perfect Solution for Small Businesses</h2>
+                        <p
+                            class="max-w-[465px] text-[#2B353EB2] font-roboto text-base sm:text-[21px] not-italic font-normal leading-[161%] mb-6 md:mb-[60px]">
+                            Pricing plans that fit like a glove.</p>
+                        <div class="flex gap-[30px] mb-11 md:mb-[90px]">
+                            <button
+                                class="w-[130px] sm:w-[167px] h-[50px] rounded-[60px] bg-[#1E71FF] text-white font-roboto text-base sm:text-[17px] not-italic font-medium leading-normal transition-all duration-300 ease-linear hover:bg-transparent border border-solid border-transparent hover:border-[#1E71FF] hover:text-[#1E71FF]">Try
+                                it Free</button>
+                            <button
+                                class="w-[130px] sm:w-[169px] h-[50px] rounded-[60px] border border-solid border-[#1E71FF] text-[#1E71FF] font-roboto text-base sm:text-[17px] not-italic font-medium leading-normal transition-all duration-300 ease-linear hover:border-transparent hover:text-white hover:bg-[#1E71FF]">Get
+                                a Demo</button>
+                        </div>
+                        <span class="block w-[167px] h-[1px] bg-[#2B353E26] mb-5 md:mb-10"></span>
+                        <div class="flex flex-col min-[400px]:flex-row gap-6">
+                            <img class="w-[131px] h-[19px]" src="/assets/images/stars.webp" alt="stars">
+                            <p
+                                class="w-[274px] text-[#2B353EB2] font-roboto text-base sm:text-lg not-italic font-bold leading-[161%]">
+                                5,200 businesses<span class="font-normal"> use ChatApp and they rate it as</span>
+                                5-stars.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- footer -->
+    <footer id="contact" class="md:h-[490px] bg-white">
+        <div class="container1 mx-auto px-3 pt-12 sm:pt-[90px]">
+            <div class="flex md:flex-row flex-col pb-12 md:pb-[180px] gap-y-4">
+                <div class="w-full md:w-[34%]">
+                    <h2
+                        class="text-[#1E71FF] font-poppins text-[26px] not-italic font-semibold leading-[116%] tracking-[-0.52px] mb-[18px]">
+                        chat<span class="font-light">app</span></h2>
+                    <p
+                        class="max-w-[168px] text-[#2B353EB2] font-roboto text-[15px] not-italic font-normal leading-[161%]">
+                        The last team chat you will ever need.</p>
+                </div>
+                <div class="w-full md:w-[66%] flex flex-wrap gap-y-4">
+                    <div class="w-[50%] min-[500px]:w-[25%]">
+                        <ul>
+                            <li class="text-[#2B353E] font-poppins text-lg not-italic font-normal leading-[161%] mb-5">
+                                Help</li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] "><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">Support</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] my-3"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">Knowledgebase</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%]"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">Tutorials</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-[50%] min-[500px]:w-[25%]">
+                        <ul>
+                            <li class="text-[#2B353E] font-poppins text-lg not-italic font-normal leading-[161%] mb-5">
+                                Features</li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] mb-3"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">Screen Sharing</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] mb-3"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">iOS & Android Apps</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] mb-3"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">File Sharing</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%]"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">User Management</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-[50%] min-[500px]:w-[25%]">
+                        <ul>
+                            <li class="text-[#2B353E] font-poppins text-lg not-italic font-normal leading-[161%] mb-5">
+                                Company</li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] "><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">About Us</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] my-3"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">Careers</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%]"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-[50%] min-[500px]:w-[25%]">
+                        <ul>
+                            <li class="text-[#2B353E] font-poppins text-lg not-italic font-normal leading-[161%] mb-5">
+                                Contact Us</li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] "><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="mailto:info@chatapp.com">info@chatapp.com</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%] my-3"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="tel:1-800-200-300">1-800-200-300</a></li>
+                            <li class="font-roboto text-[13px] not-italic font-normal leading-[161%]"><a
+                                    class="text-[#2B353EB2] relative after:absolute after:w-0 after:h-[1px] after:bg-[#2B353EB2] after:bottom-0 after:left-[50%] hover:after:w-full hover:after:left-0 after:transition-all after:duration-300 after:ease-linear"
+                                    href="https://www.google.com/maps/place/3500+Deer+Creek+Rd,+Palo+Alto,+CA+94304,+USA/@37.3946914,-122.1529667,17z/data=!3m1!4b1!4m6!3m5!1s0x808fb16d76f922ef:0x943c73a08441d5ed!8m2!3d37.3946872!4d-122.1503918!16s%2Fg%2F11tj9dn0df?entry=ttu"
+                                    target="_blank">3500 Deer Creek Rd<br>
+                                    Palo Alto, CA</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full">
+                <p class="text-[#2B353EB2] font-roboto text-[13px] not-italic font-normal leading-[161%] mb-6 md:mb-0">©
+                    Copyright ChatApp Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/doc.js"></script>
+</body>
+
+</html>

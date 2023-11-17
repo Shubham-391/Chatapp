@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap');
+
+.container1 {
+    max-width: 1184px;
+}
+
+.container2 {
+    max-width: 1312px;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.rotate-45 {
+    rotate: 45deg;
+}
+
+.rotate-135 {
+    rotate: 135deg;
+}
+
+.translate-icon {
+    transform: translate(-11px, 12px);
+}
+
+.hidden {
+    display: none;
+}
